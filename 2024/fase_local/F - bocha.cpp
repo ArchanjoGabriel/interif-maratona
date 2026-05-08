@@ -2,6 +2,10 @@
 
 using namespace std;
 
+// InterIF 2024
+// fase Local
+// Técnica: If-Else
+
 int main()
 {
     ios::sync_with_stdio(false);
