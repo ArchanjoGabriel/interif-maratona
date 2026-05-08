@@ -4,7 +4,7 @@ using namespace std;
 
 // InterIF 2024
 // Fase Local
-// Técnica: DP + memoização
+// Técnica: Percorrer string
 
 void mostrar_tabuleiro(const string &notacao)
 {
