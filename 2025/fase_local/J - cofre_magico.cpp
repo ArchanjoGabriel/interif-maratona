@@ -10,9 +10,9 @@ void contar_divisores(const vector<int> &numeros)
 {
     int numero_atual;
     int maior_qtde_divisores = 0;
-    int contador = 1;
     for (int i = 0; i < (int)numeros.size(); i++)
     {
+        int contador = 1;
         for (int j = 2; j < numeros[i]; j++)
         {
             if (numeros[i] % j == 0) contador++;
@@ -20,13 +20,11 @@ void contar_divisores(const vector<int> &numeros)
         if (contador > maior_qtde_divisores)
         {
             maior_qtde_divisores = contador;
-            contador = 1;
             numero_atual = numeros[i];
         }
         else if (contador == maior_qtde_divisores)
         {
             if (numeros[i] < numero_atual) numero_atual = numeros[i];
-            contador = 1;
         }
     }
 
@@ -42,6 +40,7 @@ int main()
     vector<int> numeros;
 
     cin >> qtde_n;
+    if (qtde_n == 0) return 0;
     while (qtde_n--)
     {
         cin >> n;
