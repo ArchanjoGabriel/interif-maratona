@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <cstddef>
 
 using namespace std;
 
@@ -6,7 +7,7 @@ using namespace std;
 // Fase Local
 // Técnica: Busca Gulosa
 
-int guloso(const vector<int> &cedulas, int valor)
+long long guloso(const vector<long long> &cedulas, long long valor)
 {
     int i = 0;
     int contador = 0;
@@ -26,12 +27,12 @@ int guloso(const vector<int> &cedulas, int valor)
 int main()
 {
     ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
-    int qtde_cedulas, valor;
+    cin.tie(NULL);
+
+    long long qtde_cedulas, valor;
 
     cin >> qtde_cedulas;
-    vector<int> cedulas;
+    vector<long long> cedulas;
 
     for (int i = 0; i < qtde_cedulas; i++)
     {
@@ -42,7 +43,7 @@ int main()
 
     cin >> valor;
 
-    sort(cedulas.begin(), cedulas.end(), greater<int>());
+    sort(cedulas.begin(), cedulas.end(), greater<long long>());
 
     cout << guloso(cedulas, valor) << '\n';
 
