@@ -10,7 +10,6 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
     int fileiras, cadeiras;
 
     cin >> fileiras >> cadeiras;
